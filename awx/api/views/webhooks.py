@@ -314,7 +314,7 @@ class BitbucketCloudWebhookReceiver(WebhookReceiverBase):
         'repo:push': 'push.changes.0.target.hash',
         'pullrequest:created': 'pullrequest.source.commit.hash',
         'pullrequest:updated': 'pullrequest.source.commit.hash',
-        'pullrequest:fulfilled': 'pullrequest.merge_commit.hash',
+        'pullrequest:fulfilled': 'pullrequest.source.commit.hash',
     }
 
     def get_event_type(self):
